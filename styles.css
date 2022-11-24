@@ -1,5 +1,5 @@
 #container {
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 20px;
     display: grid;
     grid-gap: 0em;
@@ -24,11 +24,39 @@
   }
 
  body{
+    font-family: 'Noto Sans', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     background-color: #caebf2;
+ }
+
+ h1{
+  color: #001f3f;
+  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+ }
+
+ #red, #blue, #yellow, #green{
+  height: 100px;
+  width: 100px;
+ }
+
+ #blue{
+  background-color: #001f3f;
+ }
+
+ #red{
+  background-color: #3f0001;
+ }
+
+ #green{
+  background-color: #073f00;
+ }
+
+ #yellow{
+  background-color: #605c01;
  }
 
  button {

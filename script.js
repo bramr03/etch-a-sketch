@@ -1,6 +1,8 @@
 const container = document.getElementById("container");
 let grids;
 
+let gridColor = "#001f3f";
+
 function makeRows(rows, cols) {
     container.style.setProperty('--grid-rows', rows);
     container.style.setProperty('--grid-cols', cols);
@@ -14,9 +16,25 @@ function makeRows(rows, cols) {
   };
 
 makeRows(8, 8);
+const yellow = document.querySelector('#yellow');
+const red = document.querySelector('#red');
+const blue = document.querySelector('#blue');
+const green = document.querySelector('#green');
 
+yellow.addEventListener('click', () => {
+  gridColor = "#605c01";
+});
+red.addEventListener('click', () => {
+  gridColor = "#3f0001";
+});
+blue.addEventListener('click', () => {
+  gridColor = "#001f3f";
+});
+green.addEventListener('click', () => {
+  gridColor = "#073f00";
+});
 function draw(gridItem){
-  gridItem.setAttribute("style", "background-color: #001f3f;");
+  gridItem.setAttribute("style", "background-color: " + gridColor + ";");
 };
 
 let isDrawing;
