@@ -72,6 +72,6 @@ butAmount.addEventListener('click', () => {
 const butReset = document.querySelector('#reset');
 butReset.addEventListener('click', () => {
   grids.forEach((div) => {
-    div.setAttribute("style", "backgroound-color: white;");
+    div.setAttribute("style", "background-color: white;");
   });
 });
